@@ -1,0 +1,14 @@
+ManifestFileVersion: 0
+CRC: 3500308505
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 33529dca76c9e124192f169e46db732d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 31d6cfe0d16ae931b73c59d7e0c089c0
+HashAppended: 0
+ClassTypes: []
+Assets:
+- Assets/Scenes/Bali/Manik Angkeran/SansgitVil.unity
+Dependencies: []

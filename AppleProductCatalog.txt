@@ -1,0 +1,4 @@
+SKU	Product ID	Reference Name	Type	Cleared For Sale	Wholesale Price Tier	Displayed Name	Description	Screenshot Path	Effective Date	End Date	Review Notes	Hosted Content Path
+com.matata.games.playground.hiddenobject	coin.400	coin.400	Consumable	yes	1	Coin x 400	This Package contains 400 coins					
+com.matata.games.playground.hiddenobject	coin.2200	coin.2200	Consumable	yes	5	Coin x 2200	This Package contains 2200 coins					
+com.matata.games.playground.hiddenobject	coin.5000	coin.5000	Consumable	yes	10	Coin x 5000	This Package contains 5000 coins					

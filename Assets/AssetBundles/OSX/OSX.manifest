@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 2667411413
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: bundlelist
+      Dependencies: {}
+    Info_1:
+      Name: sangsit
+      Dependencies: {}
