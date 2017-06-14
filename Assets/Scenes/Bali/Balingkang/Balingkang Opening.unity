@@ -341,7 +341,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7870990151b8b44bd9a7a1b4e416f330, type: 3}
+  m_Sprite: {fileID: 21300010, guid: f345552a3adf149b98623dcaccab445c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -475,7 +475,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 42a85598efe454f22b5f321bb92e8fef, type: 3}
+  m_Sprite: {fileID: 21300002, guid: f345552a3adf149b98623dcaccab445c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -596,7 +596,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 98d80c3743f974dceb81d8bd9561afad, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 474b629baa58a40558d392ce8608c0ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -758,7 +758,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ca349d401fb064a1e9099295672e4b8f, type: 3}
+  m_Sprite: {fileID: 21300006, guid: f345552a3adf149b98623dcaccab445c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -880,6 +880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeTime: 2
   delay: 0
+  shaker: 0.005
 --- !u!81 &1972694593
 AudioListener:
   m_ObjectHideFlags: 0

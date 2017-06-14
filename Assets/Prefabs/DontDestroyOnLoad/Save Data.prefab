@@ -54,12 +54,26 @@ MonoBehaviour:
   tempPlayerSavedData:
     sceneList: []
     achievementList: []
+    energy: 0
+    coin: 0
+    energyTimeList: []
+    newPlayer: 0
   internalPlayerSavedData:
     sceneList: []
     achievementList: []
+    energy: 0
+    coin: 0
+    energyTimeList: []
+    newPlayer: 0
   cloudPlayerSavedData:
     sceneList: []
     achievementList: []
+    energy: 0
+    coin: 0
+    energyTimeList: []
+    newPlayer: 0
   json: 
   sceneList: []
   achievementList: []
+  currentLevelScore: 0
+  currentLevelHint: 3

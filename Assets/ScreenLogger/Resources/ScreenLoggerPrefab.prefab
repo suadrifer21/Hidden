@@ -48,29 +48,13 @@ MonoBehaviour:
   AnchorPosition: 2
   FontSize: 14
   BackgroundOpacity: 0.607
-  BackgroundColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
+  BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   LogMessages: 1
   LogWarnings: 1
   LogErrors: 1
-  MessageColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  WarningColor:
-    r: 1
-    g: 0.92156863
-    b: 0.015686275
-    a: 1
-  ErrorColor:
-    r: 1
-    g: 0.5
-    b: 0.5
-    a: 1
+  MessageColor: {r: 1, g: 1, b: 1, a: 1}
+  WarningColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  ErrorColor: {r: 1, g: 0.5, b: 0.5, a: 1}
   StackTraceMessages: 0
   StackTraceWarnings: 0
   StackTraceErrors: 1

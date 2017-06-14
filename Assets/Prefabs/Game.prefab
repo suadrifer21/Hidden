@@ -3734,10 +3734,10 @@ MonoBehaviour:
   hintedObject: {fileID: 0}
   hintButton: {fileID: 114971451577998104}
   getMoreHintButton: {fileID: 1829857045090738}
-  time: 2
   sparkleActive: 0
   pointer: {fileID: 1216791777073888}
   isPointing: 0
+  hintRemaining: 3
   hintRemainingText: {fileID: 114303685720048436}
   confirmationDialog: {fileID: 1488092258045292}
 --- !u!114 &114300012017130058
@@ -4574,6 +4574,7 @@ MonoBehaviour:
   isGameOn: 0
   bottomPanel: {fileID: 1314046213925390}
   screenButton: {fileID: 1845060656789522}
+  isTutorialOn: 0
 --- !u!114 &114468198665129720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5030,6 +5031,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 114992442665338504}
+  totalScore: 0
+  streak: 0
+  wrongStreak: 0
   scoreRange:
   - min: 0
     max: 5
@@ -5048,6 +5052,9 @@ MonoBehaviour:
     multiplier: 100
   time: 0
   scorePopupGroup: {fileID: 224622413393274996}
+  isCarryScore: 1
+  coinRange: []
+  streakText: {fileID: 0}
 --- !u!114 &114547957462705592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6163,6 +6170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loginButton: {fileID: 1045990530897612}
   logoutButton: {fileID: 1253908585663412}
+  leadButton: {fileID: 0}
 --- !u!114 &114748207797732082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6795,6 +6803,7 @@ MonoBehaviour:
   startMusic: 3
   loopingMusic: 3
   noMusic: 0
+  finalScorePanel: {fileID: 0}
   confirmationDialog: {fileID: 1488092258045292}
 --- !u!114 &114937232548494638
 MonoBehaviour:
@@ -7116,6 +7125,7 @@ MonoBehaviour:
   achiChapter: 
   achiContentList: []
   hideStory: 1
+  showTuts: 0
 --- !u!114 &114994896985678030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7157,7 +7167,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1635356599454008}
   serializedVersion: 5
   lengthInSec: 0.2
-  speed: 1
+  simulationSpeed: 1
   looping: 1
   prewarm: 0
   playOnAwake: 1
@@ -9794,7 +9804,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1727307209423862}
   serializedVersion: 5
   lengthInSec: 0.2
-  speed: 1
+  simulationSpeed: 1
   looping: 1
   prewarm: 0
   playOnAwake: 1

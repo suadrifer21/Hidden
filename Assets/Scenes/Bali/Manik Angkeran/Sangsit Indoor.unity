@@ -4023,7 +4023,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0d3632e5db4a44143bb061b851c8780b, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 5e87a6f91581043f185d90cc41ec84ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20735,7 +20735,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 45404cc70bbaf4a3c8d0016840166ae2,
+      objectReference: {fileID: 21300000, guid: ac130f5419c2a4fa2809a06fc047573c,
         type: 3}
     - target: {fileID: 4639593726115194, guid: 125da94c57cbb47509ba31bd341e6cff, type: 2}
       propertyPath: m_LocalScale.x
@@ -20801,6 +20801,11 @@ Prefab:
         type: 2}
       propertyPath: androidBoardId
       value: CgkIoKb1_N4aEAIQCA
+      objectReference: {fileID: 0}
+    - target: {fileID: 114264498934843248, guid: 125da94c57cbb47509ba31bd341e6cff,
+        type: 2}
+      propertyPath: iosBoardId
+      value: sangsitStory
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 125da94c57cbb47509ba31bd341e6cff, type: 2}
@@ -24566,7 +24571,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7870990151b8b44bd9a7a1b4e416f330, type: 3}
+  m_Sprite: {fileID: 21300010, guid: f345552a3adf149b98623dcaccab445c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

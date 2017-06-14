@@ -124,6 +124,7 @@ MonoBehaviour:
   startMusic: 0
   loopingMusic: 0
   noMusic: 1
+  finalScorePanel: {fileID: 0}
   confirmationDialog: {fileID: 0}
 --- !u!114 &114716167272971278
 MonoBehaviour:
@@ -143,6 +144,7 @@ MonoBehaviour:
   achiChapter: 
   achiContentList: []
   hideStory: 1
+  showTuts: 0
 --- !u!124 &124964098438579350
 Behaviour:
   m_ObjectHideFlags: 1

@@ -84,7 +84,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1000012696881832}
   serializedVersion: 5
   lengthInSec: 5
-  speed: 1
+  simulationSpeed: 1
   looping: 1
   prewarm: 0
   playOnAwake: 1
@@ -2583,7 +2583,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1000012637130660}
   serializedVersion: 5
   lengthInSec: 0.1
-  speed: 1
+  simulationSpeed: 1
   looping: 0
   prewarm: 0
   playOnAwake: 1

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c88e76926c9a64b92874e628e03a83, type: 3}
+  m_Name: Dragon 2
+  m_EditorClassIdentifier: 
+  m_Texture: {fileID: 2800000, guid: 204d32316aa654caabf88b4edab9c768, type: 3}
+  m_Padding: 1
+  m_MaxSize: 4096
+  m_PackingMethod: 0
+  m_DefaultPivot: 0
+  m_DefaultCustomPivot: {x: 0.5, y: 0.5}
+  m_Sprites:
+  - source: {fileID: 21300000, guid: bad2857e0b3b6412293c90f76fec9718, type: 3}
+    targetSprite: {fileID: 21300000, guid: 204d32316aa654caabf88b4edab9c768, type: 3}
+  - source: {fileID: 21300000, guid: d80af3d7305784b799815f3ea79cfa61, type: 3}
+    targetSprite: {fileID: 21300002, guid: 204d32316aa654caabf88b4edab9c768, type: 3}
+  m_PendingActions: []

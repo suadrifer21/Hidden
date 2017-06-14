@@ -10,6 +10,7 @@ public class CameraShake : MonoBehaviour {
 	bool up = true;
 	float time = 0;
 	Vector3 shakeForce = new Vector3( 1, 1, 0);
+	public float shaker = 0.01f;
 
 	// Use this for initialization
 	void Start () {
@@ -34,10 +35,10 @@ public class CameraShake : MonoBehaviour {
 					time = 0;
 				}
 				if (up) {
-					transform.Translate (shakeForce * 0.01f);		
+					transform.Translate (shakeForce * shaker);		
 				}
 				else {
-					transform.Translate (-shakeForce * 0.01f);
+					transform.Translate (-shakeForce * shaker);
 				}
 			} else {
 				shake = false;

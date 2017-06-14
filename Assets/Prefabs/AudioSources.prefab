@@ -1435,3 +1435,4 @@ MonoBehaviour:
   sfx: {fileID: 4486767044633792}
   SoundSlider: {fileID: 0}
   MusicSlider: {fileID: 0}
+  playingMusic: {fileID: 0}

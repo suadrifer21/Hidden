@@ -25,7 +25,13 @@ public class EndSceneScript : MonoBehaviour {
 	public float cameraStartingSize = 3f;
 
 	public GameObject popupCanvas;
+	#if UNITY_ANDROID
 	public string androidBoardId;
+	#endif
+	#if UNITY_IOS
+	public string iosBoardId;
+	#endif
+
 
 	void Start () {
 		curScale = minScale;
@@ -37,7 +43,7 @@ public class EndSceneScript : MonoBehaviour {
 			curScale += scaleInc;
 
 
-			if (popupCanvas != null && !popupCanvas.active) {
+			if (popupCanvas != null && !popupCanvas.activeSelf) {
 				popupCanvas.SetActive (true);
 			}
 
@@ -92,6 +98,22 @@ public class EndSceneScript : MonoBehaviour {
 			SocialPlatformManager.instance.SaveGame();
 		}
 		#endif
+		#if UNITY_IOS
+		if (Social.localUser.authenticated) {
+
+
+
+			Social.ReportScore(Scoring.instance.totalScore, iosBoardId, success => {
+				// handle success or failure
+			});
+
+
+
+
+			//SocialPlatformManager.instance.SaveGame();
+		}
+		#endif
+
 		//}
 		if (hideAni) {
 			//ChangeScene.instance.GotoScene (true);

@@ -198,6 +198,12 @@ MonoBehaviour:
   minScale: 0
   scaleInc: 0.1
   continueText: {fileID: 0}
+  clicktoNext: {fileID: 0}
+  sceneUnlockedName: 
+  hideAni: 0
+  cameraStartingSize: 3
+  popupCanvas: {fileID: 0}
+  androidBoardId: 
 --- !u!114 &114298715638583990
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -23,6 +23,25 @@ public class SocialPlatformManager : MonoBehaviour {
 			Destroy (gameObject);
 	}
 
+	public void ArrangeButton(){
+		if (loginButton != null && logoutButton != null && leadButton != null) {
+			//			if (!PlayGamesPlatform.Instance.localUser.authenticated) {
+			if(!Social.localUser.authenticated){
+				loginButton.SetActive(true);
+				logoutButton.SetActive(false);
+				leadButton.SetActive(false);
+			} else {
+				loginButton.SetActive(false);
+				logoutButton.SetActive(true);
+				leadButton.SetActive(true);
+			}
+		}
+	}
+
+	public GameObject loginButton;
+	public GameObject logoutButton;
+	public GameObject leadButton;
+
 
 #if UNITY_ANDROID
 
@@ -49,25 +68,25 @@ public class SocialPlatformManager : MonoBehaviour {
 //			logoutButton.SetActive(true);
 //		}
 	}
-
-	public void ArrangeButton(){
-		if (loginButton != null && logoutButton != null && leadButton != null) {
-			//			if (!PlayGamesPlatform.Instance.localUser.authenticated) {
-			if(!Social.localUser.authenticated){
-				loginButton.SetActive(true);
-				logoutButton.SetActive(false);
-				leadButton.SetActive(false);
-			} else {
-				loginButton.SetActive(false);
-				logoutButton.SetActive(true);
-				leadButton.SetActive(true);
-			}
-		}
-	}
-
-	public GameObject loginButton;
-	public GameObject logoutButton;
-	public GameObject leadButton;
+//
+//	public void ArrangeButton(){
+//		if (loginButton != null && logoutButton != null && leadButton != null) {
+//			//			if (!PlayGamesPlatform.Instance.localUser.authenticated) {
+//			if(!Social.localUser.authenticated){
+//				loginButton.SetActive(true);
+//				logoutButton.SetActive(false);
+//				leadButton.SetActive(false);
+//			} else {
+//				loginButton.SetActive(false);
+//				logoutButton.SetActive(true);
+//				leadButton.SetActive(true);
+//			}
+//		}
+//	}
+//
+//	public GameObject loginButton;
+//	public GameObject logoutButton;
+//	public GameObject leadButton;
 
 
 	void Update() {
@@ -415,9 +434,7 @@ public class SocialPlatformManager : MonoBehaviour {
 	public void SignInUser () {
 		Social.localUser.Authenticate(success => {
 		if(success){
-			//authStatus.text = Social.localUser.userName;
-		loginButton.SetActive(false);
-		//logoutButton.SetActive(true);
+				ArrangeButton();
 		}
 		else{
 		//authStatus.text = "Authentication failed";
@@ -430,20 +447,23 @@ public class SocialPlatformManager : MonoBehaviour {
 
 	}
 
-	public void ArrangeButton(){
-		if (loginButton != null ) {
-	//			if (!PlayGamesPlatform.Instance.localUser.authenticated) {
-			if(!Social.localUser.authenticated){
-				loginButton.SetActive(true);
-				//logoutButton.SetActive(false);
-			} else {
-				loginButton.SetActive(false);
-			}
-		}
+	public void ShowLeaderboard() {
+		Social.ShowLeaderboardUI ();
 	}
-
-	public GameObject loginButton;
-	//public GameObject logoutButton;
+//	public void ArrangeButton(){
+//		if (loginButton != null ) {
+//	//			if (!PlayGamesPlatform.Instance.localUser.authenticated) {
+//			if(!Social.localUser.authenticated){
+//				loginButton.SetActive(true);
+//				//logoutButton.SetActive(false);
+//			} else {
+//				loginButton.SetActive(false);
+//			}
+//		}
+//	}
+//
+//	public GameObject loginButton;
+//	//public GameObject logoutButton;
 
 #endif
 
