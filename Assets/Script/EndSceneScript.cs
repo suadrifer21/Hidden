@@ -101,11 +101,15 @@ public class EndSceneScript : MonoBehaviour {
 		#if UNITY_IOS
 		if (Social.localUser.authenticated) {
 
+			try{
 
+				Social.ReportScore(Scoring.instance.totalScore, iosBoardId, success => {
+					// handle success or failure
+				});
+			}catch(System.Exception e){
+				
+			}
 
-			Social.ReportScore(Scoring.instance.totalScore, iosBoardId, success => {
-				// handle success or failure
-			});
 
 
 

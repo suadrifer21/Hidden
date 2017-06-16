@@ -26,6 +26,7 @@ public static class GPGSIds
 {
         public const string leaderboard_ruins_because_of_earthquake_story = "CgkIoKb1_N4aEAIQDw"; // <GPGSID>
         public const string leaderboard_sangsit_village_story = "CgkIoKb1_N4aEAIQCA"; // <GPGSID>
+        public const string leaderboard_kingdom_of_balingkang_story = "CgkIoKb1_N4aEAIQEQ"; // <GPGSID>
         public const string leaderboard_forest_story = "CgkIoKb1_N4aEAIQCQ"; // <GPGSID>
         public const string achievement_a = "CgkIoKb1_N4aEAIQAQ"; // <GPGSID>
         public const string achievement_b = "CgkIoKb1_N4aEAIQAg"; // <GPGSID>

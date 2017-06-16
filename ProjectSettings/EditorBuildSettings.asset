@@ -45,3 +45,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Bali/Balingkang/Ruins.unity
   - enabled: 1
     path: Assets/Scenes/Bali/Balingkang/Barong Dance.unity
+  - enabled: 1
+    path: Assets/Scenes/Bali/Balingkang/Kingdom.unity

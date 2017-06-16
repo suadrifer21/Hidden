@@ -1,23 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/CameraShake.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/SocialPlatformManager.cs">
     <Files>
-      <File FileName="Assets/Script/CameraShake.cs" Line="41" Column="47" />
-      <File FileName="Assets/Script/AchievementPageItem.cs" Line="1" Column="1" />
-      <File FileName="Assets/Textures/Barong/items.csv" Line="1" Column="1" />
-      <File FileName="Assets/Script/SaveDataManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/EnergySystem.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/EndSceneScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/UnlockStory.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/ShopCanvas.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/PlayerResourceUI.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/SceneryRotation.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/HOG/HOG/SearchListController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/HOG/HOG/HOGController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/Scoring.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/HOG/HOG/ItemController.cs" Line="294" Column="1" />
-      <File FileName="Assets/GooglePlayGames/ISocialPlatform/PlayGamesScore.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/ChangeScene.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/AchievementScroller.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/SocialPlatformManager.cs" Line="117" Column="7" />
+      <File FileName="Assets/Script/EndSceneScript.cs" Line="108" Column="8" />
+      <File FileName="Assets/Script/SocialInterface.cs" Line="49" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
