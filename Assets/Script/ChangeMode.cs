@@ -11,6 +11,9 @@ public class ChangeMode : MonoBehaviour {
 	public GameObject challengeGroup;
 	public Text modeText;
 
+	int story = 0;
+	Transform t;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -26,12 +29,41 @@ public class ChangeMode : MonoBehaviour {
 			storyGroup.SetActive(false);
 			challengeGroup.SetActive(true);
 			storyMode = false;
+
+			SetPanel ();
+
 			modeText.text = "CHALLENGE MODE";
+
 		} else {
 			storyGroup.SetActive(true);
 			challengeGroup.SetActive(false);
 			storyMode = true;
+
+			SetPanel ();
+
 			modeText.text = "STORY MODE";
+
 		}
+	}
+
+	public void SetPanel () {
+		if (storyMode) {
+			t = storyGroup.transform.GetChild (0).GetChild (0).GetChild (0);
+			for(int i = 0; i < t.childCount; i++){
+				t.GetChild (i).gameObject.SetActive (false);
+			}
+			t.GetChild (story).gameObject.SetActive (true);
+			print(t.GetChild (story).gameObject.name);
+		} else {
+			t = challengeGroup.transform.GetChild (0).GetChild (0).GetChild (0);
+			for(int i = 0; i < t.childCount; i++){
+				t.GetChild (i).gameObject.SetActive (false);
+			}
+			t.GetChild (story).gameObject.SetActive (true);
+		}
+	}
+
+	public void SetStory(int x){
+		story = x;
 	}
 }

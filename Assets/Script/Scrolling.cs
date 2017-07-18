@@ -9,8 +9,9 @@ public class Scrolling : MonoBehaviour {
 	//speed of scrolling
 	public float speed;
 	public GameObject objectCopy;
-
+	public float scale = 1;
 	private float initPos;
+
 
 	void Start () {
 		initPos = transform.localPosition.x;
@@ -21,6 +22,7 @@ public class Scrolling : MonoBehaviour {
 		//Set clone parent and position
 		objectCopy.transform.SetParent (this.transform);
 		objectCopy.transform.localPosition = new Vector3 (getWidth(), 0, 0);
+		this.transform.position = new Vector3 (-10.64f, 0, 0);
 	}
 
 	void FixedUpdate () {
@@ -38,14 +40,19 @@ public class Scrolling : MonoBehaviour {
 			}
 		} else {
 			//shift left if player moving left
+
+			//print (initPos + " " + this.transform.localPosition.x + " " + width);
+//			print(initPos - this.transform.localPosition.x);
+
+
 			if (initPos - this.transform.localPosition.x < 0) {
-				this.transform.Translate (new Vector3 (-width, 0, 0)); 
+				this.transform.Translate (new Vector3 (-10.64f, 0, 0));
 			}
 		}
 	}
 
 	float getWidth() {
 		//Get sprite width
-		return this.GetComponent<MeshRenderer> ().bounds.size.x;
+		return (this.GetComponent<SpriteRenderer> ().bounds.size.x)/ scale;
 	}
 }

@@ -62,6 +62,7 @@
      <None Include="Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort.shader" />
      <None Include="Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort_Transparent.shader" />
      <None Include="Assets\Jiggly Bubble Free\readme_Jiggly_Bubble_Free.txt" />
+     <None Include="Assets\Textures\Palace Hall\Palace Hall.xml" />
      <None Include="Assets\Textures\Kingdom Balingkang\Kingdom Balingkang.xml" />
      <None Include="Assets\Textures\Library Scene\Library.xml" />
      <None Include="Assets\Textures\Bali\Dragon Lair\Dragon Lair.xml" />
@@ -78,6 +79,7 @@
      <None Include="Assets\Textures\Sangsit Revised2\Sangsit Revised2.xml" />
      <None Include="Assets\Textures\Dragon\Dragon.xml" />
      <None Include="Assets\Textures\Ruins\Ruins.xml" />
+     <None Include="Assets\Textures\Ruins New\Ruins New.xml" />
      <None Include="Assets\GooglePlayGames\Editor\template-Constants.txt" />
      <None Include="Assets\Textures\Bali\Sangsit Village\Sangsit Village.xml" />
      <None Include="Assets\Textures\Sangsit Indoor\Sangsit Indoor.xml" />
@@ -156,17 +158,17 @@
  <Reference Include="Purchasing.Common">
  <HintPath>/Users/matatagrafis01/Documents/Hidden/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
  </Reference>
- <Reference Include="Security">
- <HintPath>/Users/matatagrafis01/Documents/Hidden/Assets/Plugins/UnityPurchasing/Bin/Security.dll</HintPath>
- </Reference>
  <Reference Include="Stores">
  <HintPath>/Users/matatagrafis01/Documents/Hidden/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
  </Reference>
  <Reference Include="Apple">
  <HintPath>/Users/matatagrafis01/Documents/Hidden/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
  </Reference>
- <Reference Include="Facebook">
- <HintPath>/Users/matatagrafis01/Documents/Hidden/Assets/Plugins/UnityPurchasing/Bin/Facebook/Facebook.dll</HintPath>
+ <Reference Include="FacebookStore">
+ <HintPath>/Users/matatagrafis01/Documents/Hidden/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
+ </Reference>
+ <Reference Include="Security">
+ <HintPath>/Users/matatagrafis01/Documents/Hidden/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
  </Reference>
  <Reference Include="Tizen">
  <HintPath>/Users/matatagrafis01/Documents/Hidden/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>

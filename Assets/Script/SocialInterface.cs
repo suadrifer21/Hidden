@@ -64,10 +64,12 @@ public class SocialInterface : MonoBehaviour {
 	public void Save(){
 		SocialPlatformManager.instance.SaveGame ();
 	}
-	public void ShowLeads() {
-	SocialPlatformManager.instance.ShowLeaderboard ();
-	}
+
 	#endif
+
+	public void ShowLeads() {
+		SocialPlatformManager.instance.ShowLeaderboard ();
+	}
 
 	// Update is called once per frame
 	void Update () {
