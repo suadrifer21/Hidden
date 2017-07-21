@@ -195,7 +195,7 @@ public class ChangeScene : MonoBehaviour {
 
 		returnToMain = true;
 		Sound.instance.StopLoopingMusic ();
-		nextScene = "Main Menu 3";
+		nextScene = "Story 2";
 		StartCoroutine (SceneTransition(true, true));
 	}
 

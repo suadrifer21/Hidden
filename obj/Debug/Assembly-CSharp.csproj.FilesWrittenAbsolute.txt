@@ -48,3 +48,4 @@
 /Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
 /Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
 /Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/Facebook.dll
+/Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/FacebookStore.dll

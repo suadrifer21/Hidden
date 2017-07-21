@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Bali/Balingkang/Kingdom.unity
+- path: Assets/Scenes/Main Menu 3.unity
   isLoaded: 1
   isActive: 1

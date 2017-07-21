@@ -266,6 +266,7 @@
      <Compile Include="Assets\Script\PlayerResourceUI.cs" />
      <Compile Include="Assets\Script\Pointer.cs" />
      <Compile Include="Assets\Script\PostCinematic.cs" />
+     <Compile Include="Assets\Script\PurchaseConfirmation.cs" />
      <Compile Include="Assets\Script\Quit.cs" />
      <Compile Include="Assets\Script\RadialSlider.cs" />
      <Compile Include="Assets\Script\SaveDataManager.cs" />
@@ -283,6 +284,7 @@
      <Compile Include="Assets\Script\SoundInterface.cs" />
      <Compile Include="Assets\Script\SoundManager.cs" />
      <Compile Include="Assets\Script\Story.cs" />
+     <Compile Include="Assets\Script\StoryClearMessage.cs" />
      <Compile Include="Assets\Script\Timer.cs" />
      <Compile Include="Assets\Script\TimerPopup.cs" />
      <Compile Include="Assets\Script\TitleAlpha.cs" />

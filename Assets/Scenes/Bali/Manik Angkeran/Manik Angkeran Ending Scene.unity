@@ -2005,6 +2005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeTime: 1
   delay: 2
+  shaker: 0.01
 --- !u!114 &1912160697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2105,7 +2106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endScene: {fileID: 0}
   sceneTransitionImage: {fileID: 1966658905}
-  nextScene: Main Menu 3
+  nextScene: Story 2
   startMusic: 6
   loopingMusic: 6
   noMusic: 0

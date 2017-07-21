@@ -24,11 +24,10 @@ public class ShopCanvas : MonoBehaviour {
 	}
 
 	public void Fulfill (Product product){
-//		print ("zzzz");
 		if (product != null) {
 			switch (product.definition.id){
 			case "coin.400":
-//				print ("ss");
+				print ("ss");
 				EnergySystem.instance.AddCoin (400);
 				break;
 			case "coin.2200":

@@ -24,7 +24,8 @@ public class EnergySystem : MonoBehaviour {
 	public int coin;
 
 
-	int energyBought; 
+	int energyBought;
+	int coinPaid;
 
     // Use this for initialization
     void Awake () {
@@ -310,7 +311,7 @@ public class EnergySystem : MonoBehaviour {
 
 			print ("timelast set : "+timeLast);
 		} else {
-			print ("x empty");
+//			print ("x empty");
 			Reset ();	
 			timeLast = DateTime.Now;
 		}
@@ -327,6 +328,15 @@ public class EnergySystem : MonoBehaviour {
 
 	public void AddCoin(int added){
 //		print ("s");
+
+		ShopCanvas.instance.transform.GetChild (5).gameObject.SetActive (true);
+
+
+		ShopCanvas.instance.transform.GetChild (4).GetChild (0).GetComponent<TimerPopup> ().plus = true;
+		ShopCanvas.instance.transform.GetChild (4).GetChild (0).GetComponent<TimerPopup> ().extra = added;
+
+		ShopCanvas.instance.transform.GetChild (4).GetChild (0).GetComponent<TimerPopup> ().ShowPopup();
+
 		coin += added;
 		PlayerPrefs.SetInt("Coin",coin);
 		Save ();
@@ -343,15 +353,44 @@ public class EnergySystem : MonoBehaviour {
 
 	public void ShopEnergy(int cost){
 		if (coin >= cost) {
+
 			LoseCoin (cost);
 			BuyEnergy (energyBought);
 		} else
 			ShopCanvas.instance.transform.GetChild (2).gameObject.SetActive (true);
 	}
 
+
+
+	public void ShopEnergy(){
+		if (coin >= coinPaid) {
+
+			ShopCanvas.instance.transform.GetChild (4).GetChild (0).GetComponent<TimerPopup> ().plus = false;
+			ShopCanvas.instance.transform.GetChild (4).GetChild (0).GetComponent<TimerPopup> ().extra = coinPaid;
+
+			ShopCanvas.instance.transform.GetChild (4).GetChild (1).GetComponent<TimerPopup> ().plus = true;
+			ShopCanvas.instance.transform.GetChild (4).GetChild (1).GetComponent<TimerPopup> ().extra = energyBought;
+
+			ShopCanvas.instance.transform.GetChild (4).GetChild (0).GetComponent<TimerPopup> ().ShowPopup();
+			ShopCanvas.instance.transform.GetChild (4).GetChild (1).GetComponent<TimerPopup> ().ShowPopup();
+
+
+
+			LoseCoin (coinPaid);
+			BuyEnergy (energyBought);
+		} else
+			ShopCanvas.instance.transform.GetChild (2).gameObject.SetActive (true);
+	}
+
+
 	public void SetEnergyBought (int e) {
 		energyBought = e;
 	}
+
+	public void SetCoinPaid (int c) {
+		coinPaid = c;
+	}
+
 
 
 	void Save(){
@@ -369,7 +408,7 @@ public class EnergySystem : MonoBehaviour {
 		for (int i = 0; i <= maxEnergy+1; i++) {
 			string j = PlayerPrefs.GetString ("EnergyTime" + (i), "empty");
 		
-			print (j );
+//			print (j );
 			a.Add (j);
 		}
 

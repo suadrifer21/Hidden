@@ -32,8 +32,20 @@ public class PlayerResourceUI : MonoBehaviour {
 		coin.text = EnergySystem.instance.coin.ToString();
 	}
 
-	public void OpenShop(){
+	public void OpenShop(int i = 1){
 		ShopCanvas.instance.transform.GetChild (0).gameObject.SetActive(true);
+
+		if (i > 1) {
+//			ShopCanvas.instance.transform.GetChild (0).GetChild (1).gameObject.SetActive (false);
+//			ShopCanvas.instance.transform.GetChild (0).GetChild (2).gameObject.SetActive (true);
+			ShopCanvas.instance.transform.GetChild (0).GetChild (4).GetComponent<Button>().onClick.Invoke();
+
+		} else {
+//			ShopCanvas.instance.transform.GetChild (0).GetChild (1).gameObject.SetActive (true);
+//			ShopCanvas.instance.transform.GetChild (0).GetChild (2).gameObject.SetActive (false);
+			ShopCanvas.instance.transform.GetChild (0).GetChild (3).GetComponent<Button>().onClick.Invoke();
+		}
+
 	}
 
 //	public void EnterScene(int cost){

@@ -3988,6 +3988,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 429817743}
+    - target: {fileID: 114049534242356522, guid: b4d1145b269d149a183990561d5699cd,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Story 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b4d1145b269d149a183990561d5699cd, type: 2}
   m_IsPrefabParent: 0
@@ -4495,13 +4500,13 @@ MonoBehaviour:
   coinRange:
   - min: 0
     max: 10000
-    amount: 200
+    amount: 300
   - min: 10000
     max: 20000
-    amount: 300
+    amount: 500
   - min: 20000
     max: 1000000
-    amount: 500
+    amount: 800
   streakText: {fileID: 499281649}
 --- !u!114 &488547482
 MonoBehaviour:
@@ -21770,6 +21775,11 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: x 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114448138256168618, guid: 626762edb00b84080b6d7fa0ebcaf56f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Story 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 626762edb00b84080b6d7fa0ebcaf56f, type: 2}

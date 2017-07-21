@@ -21591,6 +21591,11 @@ Prefab:
       propertyPath: m_Text
       value: x 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114448138256168618, guid: 626762edb00b84080b6d7fa0ebcaf56f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Story 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 626762edb00b84080b6d7fa0ebcaf56f, type: 2}
   m_IsPrefabParent: 0
@@ -21665,7 +21670,7 @@ GameObject:
   - component: {fileID: 1704542192}
   - component: {fileID: 1704542191}
   m_Layer: 0
-  m_Name: Hat
+  m_Name: Cap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

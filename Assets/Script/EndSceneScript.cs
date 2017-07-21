@@ -80,8 +80,23 @@ public class EndSceneScript : MonoBehaviour {
 
 	}
 
+	public bool storyEnd;
+	public string storyEndName;
+
 	public void Activate() {
 		PlayerPrefs.SetInt (sceneUnlockedName, 1);
+
+		if (storyEnd) {
+			int x = PlayerPrefs.GetInt (storyEndName, 0);
+			if (x == 0)
+				PlayerPrefs.SetInt (storyEndName, 1);
+		}
+
+
+
+
+
+
 		//if (Social.localUser.authenticated) {
 		#if UNITY_ANDROID
 		if (Social.localUser.authenticated || PlayGamesPlatform.Instance.localUser.authenticated) {

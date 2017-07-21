@@ -29,3 +29,4 @@
 /Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/Mono.Cecil.Mdb.dll
 /Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/Facebook.dll
+/Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/FacebookStore.dll

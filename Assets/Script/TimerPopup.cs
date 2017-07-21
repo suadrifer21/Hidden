@@ -26,7 +26,7 @@ public class TimerPopup : MonoBehaviour {
 		if (show) {
 			if (alpha > 0) {
 				//transform.Translate (Vector3.up * 0.012f);
-				alpha -= 0.02f;
+				alpha -= 0.0075f;
 				color.a = alpha;
 				GetComponent<Text> ().color = color;
 
@@ -48,5 +48,11 @@ public class TimerPopup : MonoBehaviour {
 			}
 		}
 
+	}
+
+	public void  ShowPopup () {
+		show = true;
+
+		gameObject.SetActive (true);
 	}
 }
