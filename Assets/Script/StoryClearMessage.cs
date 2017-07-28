@@ -6,8 +6,10 @@ public class StoryClearMessage : MonoBehaviour {
 
 	public string storyEndName;
 
+
+	// NANTI IDUPIN LAGI
 	// Use this for initialization
-	void Start () {
+	void StartZZZ () {
 		int i = PlayerPrefs.GetInt (storyEndName, 0);
 		if (i == 1) {
 			ShowMessage ();
@@ -15,7 +17,6 @@ public class StoryClearMessage : MonoBehaviour {
 			if(storyEndName.Equals("Manik Cleared")){
 				int j = PlayerPrefs.GetInt ("Sangsit Village Time", 0);
 				if (j == 1) {
-					print ("were");
 					ShowMessage ();
 				}
 			}

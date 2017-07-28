@@ -55,4 +55,22 @@ public class TimerPopup : MonoBehaviour {
 
 		gameObject.SetActive (true);
 	}
+
+	public void  FlashPopup () {
+		gameObject.SetActive (true);
+
+		color.a = 1;
+		GetComponent<Text> ().color = color;
+
+		if(plus)
+			//					GetComponent<Text> ().text = "+  "+addedTime.ToString ();
+			GetComponent<Text> ().text = "+  "+extra.ToString ();
+		else
+			GetComponent<Text> ().text = "-  "+extra.ToString ();
+		Invoke ("Deactivate", 1f);
+	}
+
+	void Deactivate(){
+		gameObject.SetActive (false);
+	}
 }

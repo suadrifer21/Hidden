@@ -7,6 +7,7 @@ public class AchievementScroller : MonoBehaviour {
 
 	int cur = 0;
 	public Transform titleGroup;
+	public Transform claimButtonGroup;
 
 	// Use this for initialization
 	void Start () {
@@ -22,9 +23,11 @@ public class AchievementScroller : MonoBehaviour {
 		if ((cur+1) < transform.childCount) {
 			transform.GetChild (cur).gameObject.SetActive (false);
 			titleGroup.GetChild (cur).gameObject.SetActive (false);
+			claimButtonGroup.GetChild (cur).gameObject.SetActive (false);
 			cur++;
 			transform.GetChild (cur).gameObject.SetActive (true);
 			titleGroup.GetChild (cur).gameObject.SetActive (true);
+			claimButtonGroup.GetChild (cur).gameObject.SetActive (true);
 			transform.GetChild (cur).GetComponent<CheckAchievementLock> ().Check ();
 		}
 			
@@ -34,9 +37,11 @@ public class AchievementScroller : MonoBehaviour {
 		if (cur > 0) {
 			transform.GetChild (cur).gameObject.SetActive (false);
 			titleGroup.GetChild (cur).gameObject.SetActive (false);
+			claimButtonGroup.GetChild (cur).gameObject.SetActive (false);
 			cur--;
 			transform.GetChild (cur).gameObject.SetActive (true);
 			titleGroup.GetChild (cur).gameObject.SetActive (true);
+			claimButtonGroup.GetChild (cur).gameObject.SetActive (true);
 			transform.GetChild (cur).GetComponent<CheckAchievementLock> ().Check ();
 		}
 	}

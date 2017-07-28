@@ -240,4 +240,10 @@ public class ChangeScene : MonoBehaviour {
 //		}
 //	}
 
+	public void ShowEnergyPaid(int r){
+		ShopCanvas.instance.transform.GetChild (4).GetChild (1).GetComponent<TimerPopup> ().plus = false;
+		ShopCanvas.instance.transform.GetChild (4).GetChild (1).GetComponent<TimerPopup> ().extra = r;
+		ShopCanvas.instance.transform.GetChild (4).GetChild (1).GetComponent<TimerPopup> ().FlashPopup();
+	}
+
 }

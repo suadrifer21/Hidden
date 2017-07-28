@@ -32,8 +32,10 @@ public class SocialPlatformManager : MonoBehaviour {
 				leadButton.SetActive(false);
 			} else {
 				loginButton.SetActive(false);
-				logoutButton.SetActive(true);
 				leadButton.SetActive(true);
+				#if UNITY_ANDROID
+				logoutButton.SetActive(true);
+				#endif
 			}
 		}
 	}

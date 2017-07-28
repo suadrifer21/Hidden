@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class AchievementPageItem : MonoBehaviour {
 
 	public string achiName;
-	int isActive;
+	public int isActive;
 
 	// Use this for initialization
 	void Start () {

@@ -42,13 +42,11 @@ public class EnergySystem : MonoBehaviour {
 //        StartCoroutine(Check()); //delete this line if u do not wont check time periodically  //Если мы не хотим проверять время переодически то эту строку надо убрать
 
 
-
 		coin = PlayerPrefs.GetInt("Coin", 0);
 
 
 //		nextE = nextTime;
     }
-
 
 
 	public void LoseEnergy(int cost) //функция потери энергии
@@ -100,18 +98,22 @@ public class EnergySystem : MonoBehaviour {
 //		PlayerPrefs.SetString("EnergyTime" + a.ToString(), date_tmp); //save this datetime to first empty playerprefs // save this string to the playerprefix of the first empty slot
 
     }
+		
 
 	int GetFirstEmptyPref() //get the first empty string
-    {
-        for (int i = 1; i <= maxEnergy; i ++)
-        {
-            if (PlayerPrefs.GetString("EnergyTime" + i, "empty") == "empty")
-            {
-                return i;
-            }
-        }
-        return 0;
-    }
+	{
+		if(energy <= maxEnergy){
+			for (int i = 1; i <= maxEnergy; i ++)
+			{
+				if (PlayerPrefs.GetString("EnergyTime" + i, "empty") == "empty")
+				{
+					return i;
+				}
+			}
+		}
+		return 0;
+	}
+
 
 	public void BuyAllEnergy() //Function for buying all energy
     {
@@ -248,6 +250,8 @@ public class EnergySystem : MonoBehaviour {
 		energy += buyAmount; //добавляем
 		PlayerPrefs.SetInt("Energy", energy); //сохраняем
 
+		print (energy);
+
 		//PlayerPrefs.SetString("EnergyTime" + 1, "empty"); // since the first slot always has the closest time - we clear it
 
 		if (energy >= maxEnergy) {
@@ -325,8 +329,14 @@ public class EnergySystem : MonoBehaviour {
 //	}
 
 
-
 	public void AddCoin(int added){
+
+		coin += added;
+		PlayerPrefs.SetInt("Coin",coin);
+		Save ();
+	}
+
+	public void AddCoinBought(int added){
 //		print ("s");
 
 		ShopCanvas.instance.transform.GetChild (5).gameObject.SetActive (true);
@@ -336,6 +346,12 @@ public class EnergySystem : MonoBehaviour {
 		ShopCanvas.instance.transform.GetChild (4).GetChild (0).GetComponent<TimerPopup> ().extra = added;
 
 		ShopCanvas.instance.transform.GetChild (4).GetChild (0).GetComponent<TimerPopup> ().ShowPopup();
+
+		try{
+			Camera.main.GetComponent<SoundInterface> ().PlaySound (3);
+		} catch (Exception e){
+
+		}
 
 		coin += added;
 		PlayerPrefs.SetInt("Coin",coin);
@@ -356,6 +372,8 @@ public class EnergySystem : MonoBehaviour {
 
 			LoseCoin (cost);
 			BuyEnergy (energyBought);
+
+
 		} else
 			ShopCanvas.instance.transform.GetChild (2).gameObject.SetActive (true);
 	}
@@ -374,6 +392,11 @@ public class EnergySystem : MonoBehaviour {
 			ShopCanvas.instance.transform.GetChild (4).GetChild (0).GetComponent<TimerPopup> ().ShowPopup();
 			ShopCanvas.instance.transform.GetChild (4).GetChild (1).GetComponent<TimerPopup> ().ShowPopup();
 
+			try{
+				Camera.main.GetComponent<SoundInterface> ().PlaySound (3);
+			} catch (Exception e){
+				
+			}
 
 
 			LoseCoin (coinPaid);
@@ -422,7 +445,7 @@ public class EnergySystem : MonoBehaviour {
 		for (int i = 0; i <= maxEnergy+1; i++) {
 			a[i] = PlayerPrefs.GetString("EnergyTime" + (i), "empty");
 		}
-
+			
 	}
 
 	void Reset(){

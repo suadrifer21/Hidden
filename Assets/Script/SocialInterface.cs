@@ -29,16 +29,16 @@ public class SocialInterface : MonoBehaviour {
 			SocialPlatformManager.instance.loginButton = loginButton;
 		}
 
-
+		if(leadButton != null){
+			SocialPlatformManager.instance.leadButton = leadButton;
+		}
 
 		#if UNITY_ANDROID
 		if(logoutButton != null){
 			SocialPlatformManager.instance.logoutButton = logoutButton;
 		}
 
-		if(leadButton != null){
-		SocialPlatformManager.instance.leadButton = leadButton;
-		}
+
 		#endif
 		#if UNITY_IOS
 		if(logoutButton != null){

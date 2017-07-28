@@ -21582,7 +21582,7 @@ GameObject:
   - component: {fileID: 1704542192}
   - component: {fileID: 1704542191}
   m_Layer: 0
-  m_Name: Hat
+  m_Name: Cap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24036,7 +24036,7 @@ GameObject:
   - component: {fileID: 1972841490}
   - component: {fileID: 1972841489}
   m_Layer: 0
-  m_Name: Helm
+  m_Name: Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

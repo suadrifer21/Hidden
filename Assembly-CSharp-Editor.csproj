@@ -172,6 +172,9 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+ <Reference Include="ConsolePro.Editor">
+ <HintPath>/Users/matatagrafis01/Documents/Hidden/Assets/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Google.IOSResolver">
  <HintPath>/Users/matatagrafis01/Documents/Hidden/Assets/PlayServicesResolver/Editor/Google.IOSResolver.dll</HintPath>
  </Reference>

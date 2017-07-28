@@ -55,3 +55,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Bali/Balingkang/Challenge/Ruins Time.unity
   - enabled: 1
     path: Assets/Scenes/Bali/Balingkang/Challenge/Barong Dance Time.unity
+  - enabled: 1
+    path: Assets/Scenes/Bali/Balingkang/Challenge/Kingdom Time.unity

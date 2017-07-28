@@ -28,13 +28,13 @@ public class ShopCanvas : MonoBehaviour {
 			switch (product.definition.id){
 			case "coin.400":
 				print ("ss");
-				EnergySystem.instance.AddCoin (400);
+				EnergySystem.instance.AddCoinBought (400);
 				break;
 			case "coin.2200":
-				EnergySystem.instance.AddCoin (2200);
+				EnergySystem.instance.AddCoinBought (2200);
 				break;
 			case "coin.5000":
-				EnergySystem.instance.AddCoin (5000);
+				EnergySystem.instance.AddCoinBought (5000);
 				break;
 			Default:
 				Debug.Log (
