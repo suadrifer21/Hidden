@@ -30,6 +30,7 @@ public static class GPGSIds
         public const string leaderboard_traditional_market_challenge = "CgkIoKb1_N4aEAIQEg"; // <GPGSID>
         public const string leaderboard_kingdom_of_balingkang_story = "CgkIoKb1_N4aEAIQEQ"; // <GPGSID>
         public const string leaderboard_forest_story = "CgkIoKb1_N4aEAIQCQ"; // <GPGSID>
+        public const string leaderboard_death_forest_challenge = "CgkIoKb1_N4aEAIQGA"; // <GPGSID>
         public const string achievement_a = "CgkIoKb1_N4aEAIQAQ"; // <GPGSID>
         public const string achievement_b = "CgkIoKb1_N4aEAIQAg"; // <GPGSID>
         public const string achievement_c = "CgkIoKb1_N4aEAIQBA"; // <GPGSID>
@@ -37,12 +38,15 @@ public static class GPGSIds
         public const string achievement_e = "CgkIoKb1_N4aEAIQBg"; // <GPGSID>
         public const string leaderboard_barong_dance_story = "CgkIoKb1_N4aEAIQEA"; // <GPGSID>
         public const string leaderboard_kingdom_of_balingkang_challenge = "CgkIoKb1_N4aEAIQFQ"; // <GPGSID>
+        public const string leaderboard_outside_of_balinese_temple_story = "CgkIoKb1_N4aEAIQFw"; // <GPGSID>
         public const string leaderboard_traditional_market_story = "CgkIoKb1_N4aEAIQDg"; // <GPGSID>
         public const string leaderboard_forest_challenge = "CgkIoKb1_N4aEAIQDA"; // <GPGSID>
         public const string leaderboard_ruins_because_of_earthquake_challenge = "CgkIoKb1_N4aEAIQEw"; // <GPGSID>
         public const string leaderboard_dragons_lair_story = "CgkIoKb1_N4aEAIQCg"; // <GPGSID>
+        public const string leaderboard_outside_of_balinese_temple_challenge = "CgkIoKb1_N4aEAIQGQ"; // <GPGSID>
         public const string leaderboard_sangsit_village_challenge = "CgkIoKb1_N4aEAIQCw"; // <GPGSID>
         public const string leaderboard_dragons_lair_challenge = "CgkIoKb1_N4aEAIQDQ"; // <GPGSID>
+        public const string leaderboard_death_forest_story = "CgkIoKb1_N4aEAIQFg"; // <GPGSID>
 
 }
 

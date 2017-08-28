@@ -20807,6 +20807,11 @@ Prefab:
       propertyPath: iosBoardId
       value: sangsitStory
       objectReference: {fileID: 0}
+    - target: {fileID: 114264498934843248, guid: 125da94c57cbb47509ba31bd341e6cff,
+        type: 2}
+      propertyPath: curLevelName
+      value: Sangsit Village
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 125da94c57cbb47509ba31bd341e6cff, type: 2}
   m_IsPrefabParent: 0

@@ -9,6 +9,7 @@ public class UnlockStory : MonoBehaviour {
 	int cost;
 	string sceneName;
 	public Text costText;
+	public bool isCalon ;
 
 	bool clearManik;
 
@@ -41,48 +42,61 @@ public class UnlockStory : MonoBehaviour {
 	GameObject g;
 	public GameObject warningPanel;
 
-	public void UnlockAsli(){
-		if (EnergySystem.instance.coin >= cost) { 
-			EnergySystem.instance.coin -= cost;
-			PlayerPrefs.SetInt (sceneName, 1);
-
-			Camera.main.GetComponent<CheckSceneLock> ().Check ();
-
-
-			#if UNITY_ANDROID
-			if (Social.localUser.authenticated || PlayGamesPlatform.Instance.localUser.authenticated) {
-				SocialPlatformManager.instance.SaveGame();
-			}
-			#endif
-
-			g.GetComponent<Button> ().onClick.Invoke ();
-
-			gameObject.SetActive (false);
-
-		} else {
-			ShopCanvas.instance.transform.GetChild (2).gameObject.SetActive (true);
-		}
-	}
+//	public void UnlockAsli(){
+//		if (EnergySystem.instance.coin >= cost) { 
+//			EnergySystem.instance.coin -= cost;
+//			PlayerPrefs.SetInt (sceneName, 1);
+//
+//			Camera.main.GetComponent<CheckSceneLock> ().Check ();
+//
+//
+//			#if UNITY_ANDROID
+//			if (Social.localUser.authenticated || PlayGamesPlatform.Instance.localUser.authenticated) {
+//				SocialPlatformManager.instance.SaveGame();
+//			}
+//			#endif
+//
+//			g.GetComponent<Button> ().onClick.Invoke ();
+//
+//			gameObject.SetActive (false);
+//
+//		} else {
+//			ShopCanvas.instance.transform.GetChild (2).gameObject.SetActive (true);
+//		}
+//	}
 
 	public void Unlock(){
 		if (EnergySystem.instance.coin >= cost) {
 			int c = PlayerPrefs.GetInt ("Manik Cleared", 0);
 			if (c != 0) {
-				EnergySystem.instance.coin -= cost;
-				PlayerPrefs.SetInt (sceneName, 1);
 
-				Camera.main.GetComponent<CheckSceneLock> ().Check ();
+				if (isCalon) {
+					int d = PlayerPrefs.GetInt ("Balingkang Cleared", 0);
+					if (d != 0) {
+						UnlockSuccess ();
+					} else {
+						warningPanel.SetActive (true);
+					}
 
-
-				#if UNITY_ANDROID
-				if (Social.localUser.authenticated || PlayGamesPlatform.Instance.localUser.authenticated) {
-					SocialPlatformManager.instance.SaveGame ();
+				} else {
+					UnlockSuccess ();
 				}
-				#endif
 
-				g.GetComponent<Button> ().onClick.Invoke ();
-
-				gameObject.SetActive (false);
+//				EnergySystem.instance.coin -= cost;
+//				PlayerPrefs.SetInt (sceneName, 1);
+//
+//				Camera.main.GetComponent<CheckSceneLock> ().Check ();
+//
+//
+//				#if UNITY_ANDROID
+//				if (Social.localUser.authenticated || PlayGamesPlatform.Instance.localUser.authenticated) {
+//					SocialPlatformManager.instance.SaveGame ();
+//				}
+//				#endif
+//
+//				g.GetComponent<Button> ().onClick.Invoke ();
+//
+//				gameObject.SetActive (false);
 			} else {
 				warningPanel.SetActive (true);
 			}
@@ -97,6 +111,24 @@ public class UnlockStory : MonoBehaviour {
 	public void SetObject(GameObject g){
 		this.g = g;
 
+	}
+
+	void UnlockSuccess(){
+		EnergySystem.instance.coin -= cost;
+		PlayerPrefs.SetInt (sceneName, 1);
+
+		Camera.main.GetComponent<CheckSceneLock> ().Check ();
+
+
+		#if UNITY_ANDROID
+		if (Social.localUser.authenticated || PlayGamesPlatform.Instance.localUser.authenticated) {
+			SocialPlatformManager.instance.SaveGame ();
+		}
+		#endif
+
+		g.GetComponent<Button> ().onClick.Invoke ();
+
+		gameObject.SetActive (false);
 	}
 
 //	public void CheckReq (int i = 2) {

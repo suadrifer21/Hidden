@@ -131,9 +131,11 @@ public class SaveDataManager : MonoBehaviour {
 		internalPlayerSavedData = new PlayerSaveData () ;
 		for(int i = 0; i < sceneList.Count; i++){
 			j = PlayerPrefs.GetInt (sceneList[i].name, 0);
-			if (j == 1)
+			if (j == 1) {				
 				sceneList [i].isOpen = true;
-			else
+				int x = PlayerPrefs.GetInt (sceneList[i].name+" Score", 0);
+				sceneList [i].bestScore = x;
+			}else
 				sceneList [i].isOpen = false;
 			//playerData.sceneList.Add (sceneList[i]);
 			internalPlayerSavedData.sceneList.Add (sceneList[i]);
@@ -152,7 +154,7 @@ public class SaveDataManager : MonoBehaviour {
 
 		internalPlayerSavedData.energy = PlayerPrefs.GetInt("Energy", EnergySystem.instance.maxEnergy);
 		internalPlayerSavedData.coin = PlayerPrefs.GetInt("Coin", 0);
-		print (internalPlayerSavedData.coin);
+//		print (internalPlayerSavedData.coin);
 
 		for (int i = 0; i <= EnergySystem.instance.maxEnergy+1; i++) {
 			string z = PlayerPrefs.GetString ("EnergyTime" + (i), "empty");
@@ -164,6 +166,17 @@ public class SaveDataManager : MonoBehaviour {
 
 //		print ("apply");
 //		print (internalPlayerSavedData.sceneList[2].name+" "+internalPlayerSavedData.sceneList[2].isOpen);
+
+
+		internalPlayerSavedData.manikStoryReward 			= PlayerPrefs.GetInt("Manik Cleared", 0);
+		internalPlayerSavedData.manikChallengeReward 		= PlayerPrefs.GetInt("Manik Time Cleared", 0);
+		internalPlayerSavedData.manikAchiReward 			= PlayerPrefs.GetInt("Manik Achievement Cleared", 0);
+		internalPlayerSavedData.balingkangStoryReward 		= PlayerPrefs.GetInt("Balingkang Cleared", 0);
+		internalPlayerSavedData.balingkangChallengeReward 	= PlayerPrefs.GetInt("Balingkan Time Cleared", 0);
+		internalPlayerSavedData.balingkangAchiReward 		= PlayerPrefs.GetInt("Balingkang Achievement Cleared", 0);
+		internalPlayerSavedData.calonStoryReward			= PlayerPrefs.GetInt("Calon Cleared", 0);
+		internalPlayerSavedData.calonChallengeReward 		= PlayerPrefs.GetInt("Calon Time Cleared", 0);
+		internalPlayerSavedData.calonAchiReward 			= PlayerPrefs.GetInt("Calon Achievement Cleared", 0);
 
 	}
 
@@ -187,6 +200,10 @@ public class SaveDataManager : MonoBehaviour {
 
 				PlayerPrefs.SetInt (internalPlayerSavedData.sceneList [i].name, 1);
 			}
+
+
+			if (cloudPlayerSavedData.sceneList [i].bestScore > internalPlayerSavedData.sceneList [i].bestScore)
+				internalPlayerSavedData.sceneList [i].bestScore = cloudPlayerSavedData.sceneList [i].bestScore;
 		}
 
 		for(int i = 0; i < cloudPlayerSavedData.achievementList.Count; i++){
@@ -212,6 +229,56 @@ public class SaveDataManager : MonoBehaviour {
 		newPlayer = false;
 		internalPlayerSavedData.newPlayer = false;
 		PlayerPrefs.SetInt ("NewPlayer", 0);
+
+
+		//Manik
+		if (cloudPlayerSavedData.manikStoryReward > internalPlayerSavedData.manikStoryReward) {
+			internalPlayerSavedData.manikStoryReward = cloudPlayerSavedData.manikStoryReward;
+			PlayerPrefs.SetInt("Manik Cleared", internalPlayerSavedData.manikStoryReward);
+		}
+
+		if (cloudPlayerSavedData.manikChallengeReward > internalPlayerSavedData.manikChallengeReward) {
+			internalPlayerSavedData.manikChallengeReward = cloudPlayerSavedData.manikChallengeReward;
+			PlayerPrefs.SetInt("Manik Time Cleared", internalPlayerSavedData.manikChallengeReward);
+		}
+
+		if (cloudPlayerSavedData.manikAchiReward > internalPlayerSavedData.manikAchiReward) {
+			internalPlayerSavedData.manikAchiReward = cloudPlayerSavedData.manikAchiReward;
+			PlayerPrefs.SetInt("Manik Achievement Cleared", internalPlayerSavedData.manikAchiReward);
+		}
+
+		//Balingkang
+		if (cloudPlayerSavedData.balingkangStoryReward > internalPlayerSavedData.balingkangStoryReward) {
+			internalPlayerSavedData.balingkangStoryReward = cloudPlayerSavedData.balingkangStoryReward;
+			PlayerPrefs.SetInt("Balingkang Cleared", internalPlayerSavedData.balingkangStoryReward);
+		}
+
+		if (cloudPlayerSavedData.balingkangChallengeReward > internalPlayerSavedData.balingkangChallengeReward) {
+			internalPlayerSavedData.balingkangChallengeReward = cloudPlayerSavedData.balingkangChallengeReward;
+			PlayerPrefs.SetInt("Balingkang Time Cleared", internalPlayerSavedData.balingkangChallengeReward);
+		}
+
+		if (cloudPlayerSavedData.balingkangAchiReward > internalPlayerSavedData.balingkangAchiReward) {
+			internalPlayerSavedData.balingkangAchiReward = cloudPlayerSavedData.balingkangAchiReward;
+			PlayerPrefs.SetInt("Balingkang Achievement Cleared", internalPlayerSavedData.balingkangAchiReward);
+		}
+
+		//Calon Arang
+		if (cloudPlayerSavedData.calonStoryReward > internalPlayerSavedData.calonStoryReward) {
+			internalPlayerSavedData.calonStoryReward = cloudPlayerSavedData.calonStoryReward;
+			PlayerPrefs.SetInt("Calon Cleared", internalPlayerSavedData.calonStoryReward);
+		}
+
+		if (cloudPlayerSavedData.calonChallengeReward > internalPlayerSavedData.calonChallengeReward) {
+			internalPlayerSavedData.calonChallengeReward = cloudPlayerSavedData.calonChallengeReward;
+			PlayerPrefs.SetInt("Calon Time Cleared", internalPlayerSavedData.calonChallengeReward);
+		}
+
+		if (cloudPlayerSavedData.calonAchiReward > internalPlayerSavedData.calonAchiReward) {
+			internalPlayerSavedData.calonAchiReward = cloudPlayerSavedData.calonAchiReward;
+			PlayerPrefs.SetInt("Calon Achievement Cleared", internalPlayerSavedData.calonAchiReward);
+		}
+
 
 //		string x = "empty";
 //
@@ -308,6 +375,17 @@ public class PlayerSaveData {
 	public List<string> energyTimeList = new List<string> (); 
 
 	public bool newPlayer;
+
+	//new
+	public int manikStoryReward = 0;
+	public int manikChallengeReward = 0;
+	public int manikAchiReward = 0;
+	public int balingkangStoryReward = 0;
+	public int balingkangChallengeReward = 0;
+	public int balingkangAchiReward = 0;
+	public int calonStoryReward = 0;
+	public int calonChallengeReward = 0;
+	public int calonAchiReward = 0;
 }
 
 
@@ -317,13 +395,17 @@ public class Scene {
 	public string name;
 	public bool isOpen;
 
-	//public int bestScore;
+	public int bestScore = 0;
 
-	//public Scene(string name, bool isLock, int bestScore = 0){
 	public Scene(string name, bool isOpen){
 		this.name = name;
 		this.isOpen = isOpen;
-		//this.bestScore = bestScore;
+	}
+
+	public Scene(string name, bool isOpen, int bestScore){
+		this.name = name;
+		this.isOpen = isOpen;
+		this.bestScore = bestScore;
 	}
 }
 

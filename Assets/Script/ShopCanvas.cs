@@ -49,4 +49,8 @@ public class ShopCanvas : MonoBehaviour {
 	public void Wow(){
 		print("ss");
 	}
+
+	public void RewardClaimed(string s){
+		
+	}
 }

@@ -455,5 +455,13 @@ public class EnergySystem : MonoBehaviour {
 		energy = maxEnergy;
 	}
 
+	public void BonusEnergy(int amount){
+		ShopCanvas.instance.transform.GetChild (4).GetChild (1).GetComponent<TimerPopup> ().plus = true;
+		ShopCanvas.instance.transform.GetChild (4).GetChild (1).GetComponent<TimerPopup> ().extra = amount;
+		ShopCanvas.instance.transform.GetChild (4).GetChild (1).GetComponent<TimerPopup> ().ShowPopup();
+
+		BuyEnergy (amount);
+	}
+
 }
 

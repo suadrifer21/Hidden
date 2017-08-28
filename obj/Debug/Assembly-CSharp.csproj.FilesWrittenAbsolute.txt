@@ -49,3 +49,10 @@
 /Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
 /Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/Facebook.dll
 /Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/FacebookStore.dll
+/Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/ChannelPurchase.dll
+/Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/UnityStore.dll
+/Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/UnityEngine.TestRunner.dll
+/Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/nunit.framework.dll
+/Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/UnityEngine.Timeline.dll
+/Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/ExCSS.Unity.dll
+/Users/matatagrafis01/Documents/Hidden/Temp/bin/Debug/Unity.Legacy.NRefactory.dll

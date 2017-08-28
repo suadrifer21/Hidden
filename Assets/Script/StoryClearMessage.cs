@@ -5,11 +5,13 @@ using UnityEngine;
 public class StoryClearMessage : MonoBehaviour {
 
 	public string storyEndName;
+	public int rewardPanelParentNum;
+	public int rewardPanelChildNum;
 
 
 	// NANTI IDUPIN LAGI
 	// Use this for initialization
-	void StartZZZ () {
+	void Start () {
 		int i = PlayerPrefs.GetInt (storyEndName, 0);
 		if (i == 1) {
 			ShowMessage ();
@@ -35,5 +37,6 @@ public class StoryClearMessage : MonoBehaviour {
 	}
 	void HideMessage () {
 		transform.GetChild (0).gameObject.SetActive (false);
+		ShopCanvas.instance.transform.GetChild (6).GetChild (rewardPanelParentNum).GetChild (rewardPanelChildNum).gameObject.SetActive (true);
 	}
 }

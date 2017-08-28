@@ -80,11 +80,18 @@ public class EndSceneScript : MonoBehaviour {
 
 	}
 
+	public string curLevelName;
 	public bool storyEnd;
 	public string storyEndName;
 
 	public void Activate() {
 		PlayerPrefs.SetInt (sceneUnlockedName, 1);
+		int bestScore = PlayerPrefs.GetInt (curLevelName+" Score", 0);
+		int curScore = Scoring.instance.totalScore;
+		if (curScore > bestScore)
+			PlayerPrefs.SetInt (curLevelName + " Score", curScore);
+		else
+			curScore = bestScore;
 
 		if (storyEnd) {
 			int x = PlayerPrefs.GetInt (storyEndName, 0);
@@ -93,6 +100,8 @@ public class EndSceneScript : MonoBehaviour {
 		}
 
 
+
+		SaveDataManager.instance.ApplyPlayerPrefs ();
 
 
 
@@ -103,7 +112,8 @@ public class EndSceneScript : MonoBehaviour {
 
 
 
-			Social.ReportScore(Scoring.instance.totalScore, androidBoardId, (bool success) => {
+//			Social.ReportScore(Scoring.instance.totalScore, androidBoardId, (bool success) => {
+			Social.ReportScore(curScore, androidBoardId, (bool success) => {
 				// handle success or failure
 			});
 
@@ -118,7 +128,8 @@ public class EndSceneScript : MonoBehaviour {
 
 			try{
 
-				Social.ReportScore(Scoring.instance.totalScore, iosBoardId, success => {
+				//Social.ReportScore(Scoring.instance.totalScore, iosBoardId, success => {
+				Social.ReportScore(curScore, iosBoardId, success => {
 					// handle success or failure
 				});
 			}catch(System.Exception e){

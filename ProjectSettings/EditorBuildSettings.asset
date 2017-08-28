@@ -7,53 +7,109 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Main Menu 3.unity
+    guid: 671def76554e54a7da95f010c0b296e3
   - enabled: 1
     path: Assets/Scenes/Story 2.unity
+    guid: 21722097d1e5b4f5e88690354b95026c
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Manik Angkeran Opening Scene.unity
+    guid: a5bb33483710a4fb3951694935dcfd5c
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Sangsit Outdoor.unity
+    guid: 9647727c3b9ca450180bb0fe437d578a
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Sangsit Indoor.unity
+    guid: 17c45546cc3034a66ab98aa1a5607563
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Forest First.unity
+    guid: b8e6c22c43dd04979be265f91d70611b
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Forest Second.unity
+    guid: f52911c48901641779249beb9f653a55
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Dragon Lair.unity
+    guid: f9cd9cf0f148a4d35930415409a5ca30
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Dragon Lair 2.unity
+    guid: 180dd95b017464be486d55e1df78d342
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Manik Angkeran Ending Scene.unity
+    guid: fe380584a76c54f68bacdcd79734708c
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Challenge/Sangsit Outdoor Time.unity
+    guid: 0935cdba3919943a18dbafffd24ad2fb
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Challenge/Sangsit Indoor Time.unity
+    guid: 454ac7c933ee04dc68437796e9b7a290
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Challenge/Forest First Time.unity
+    guid: 0bbf3cb37b95c4538960ab6d1d897f83
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Challenge/Forest Second Time.unity
+    guid: fce7bbe5f6da74956a020ca23b8d43a7
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Challenge/Dragon Lair 1 Time.unity
+    guid: af6e7c27c0ed54132912a1a650557148
   - enabled: 1
     path: Assets/Scenes/Bali/Manik Angkeran/Challenge/Dragon Lair 2 Time.unity
+    guid: 466d8be95d5554aa79b774dc1e588177
   - enabled: 1
     path: Assets/Scenes/Bali/Balingkang/Balingkang Opening.unity
+    guid: 32cc75f61e4b144b5afa4df8d6d46eb5
   - enabled: 1
     path: Assets/Scenes/Bali/Balingkang/Traditional Market.unity
+    guid: 6c2e181dfa7574fbb87611a92610e09b
   - enabled: 1
     path: Assets/Scenes/Bali/Balingkang/Ruins.unity
+    guid: 915df0e7ac7b949e5b16df6e8c6ddf1c
   - enabled: 1
     path: Assets/Scenes/Bali/Balingkang/Barong Dance.unity
+    guid: 835b686db44a249f9882d5f5db695d87
   - enabled: 1
     path: Assets/Scenes/Bali/Balingkang/Kingdom.unity
+    guid: 85a237ef24b8e435489f09a49e051c3a
   - enabled: 1
     path: Assets/Scenes/Bali/Balingkang/Balingkang Ending.unity
+    guid: 487f620a277384d53b54952be4f4b819
   - enabled: 1
     path: Assets/Scenes/Bali/Balingkang/Challenge/Traditional Market Time.unity
+    guid: d6d59f38ceaac4829a604a40550b2cc2
   - enabled: 1
     path: Assets/Scenes/Bali/Balingkang/Challenge/Ruins Time.unity
+    guid: b6b67f8c53f8c4ea1b016fed57e30be2
   - enabled: 1
     path: Assets/Scenes/Bali/Balingkang/Challenge/Barong Dance Time.unity
+    guid: 8028e4b97432c4f58aec0c8ddbdea084
   - enabled: 1
     path: Assets/Scenes/Bali/Balingkang/Challenge/Kingdom Time.unity
+    guid: 6486457892df9451681dd6e3ebd6afc9
+  - enabled: 1
+    path: Assets/Scenes/Bali/Calon Arang/Calon Arang Opening.unity
+    guid: 5c196fe1332214fe884e234f50ef130c
+  - enabled: 1
+    path: Assets/Scenes/Bali/Calon Arang/Death Forest.unity
+    guid: ba96bece759eb4d3bafe41fd62ccd47f
+  - enabled: 1
+    path: Assets/Scenes/Bali/Calon Arang/Palace.unity
+    guid: 366b35569113f46b0928e2f73f9e897d
+  - enabled: 1
+    path: Assets/Scenes/Bali/Calon Arang/Temple.unity
+    guid: c031c600ad94042c5abe2930fc65fb03
+  - enabled: 1
+    path: Assets/Scenes/Bali/Calon Arang/Burned Village old.unity
+    guid: 0a83f79f905df4964a4c03ddf5465a57
+  - enabled: 1
+    path: Assets/Scenes/Bali/Calon Arang/Calon Arang Ending.unity
+    guid: 3df0eff844c8c47c480382d1cecd2603
+  - enabled: 1
+    path: Assets/Scenes/Bali/Calon Arang/Challenge/Death Forest Time.unity
+    guid: 9f4958ad7ecf14e58b7bf76ea435346a
+  - enabled: 1
+    path: Assets/Scenes/Bali/Calon Arang/Challenge/Temple Time.unity
+    guid: b108e27552fa545bba27d7d010db5a5a
+  - enabled: 1
+    path: Assets/Scenes/Bali/Calon Arang/Challenge/Palace Time.unity
+    guid: 7ad4cb70cff574a1090349c071f88b71
+  - enabled: 1
+    path: Assets/Scenes/Bali/Calon Arang/Challenge/Burned Village Time old.unity
+    guid: d6b6ba49b51cc4a928781af9c5dd97f8

@@ -68,4 +68,7 @@ public class AchievementPageItem : MonoBehaviour {
 		}
 	}
 
+
+
+
 }

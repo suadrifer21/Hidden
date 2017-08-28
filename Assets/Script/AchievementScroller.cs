@@ -8,6 +8,7 @@ public class AchievementScroller : MonoBehaviour {
 	int cur = 0;
 	public Transform titleGroup;
 	public Transform claimButtonGroup;
+	public Transform achiHint;
 
 	// Use this for initialization
 	void Start () {
@@ -44,5 +45,21 @@ public class AchievementScroller : MonoBehaviour {
 			claimButtonGroup.GetChild (cur).gameObject.SetActive (true);
 			transform.GetChild (cur).GetComponent<CheckAchievementLock> ().Check ();
 		}
+	}
+
+	int curHint = 0;
+
+	public void ShowHint(int i){
+		print (i);
+		curHint = i;
+
+		print (achiHint.GetChild (1).GetChild (i).gameObject.name);
+
+		achiHint.GetChild (1).GetChild (i).gameObject.SetActive (true);
+		achiHint.GetChild (0).gameObject.SetActive (true);
+	}
+
+	public void DeactivateHint(){
+		achiHint.GetChild (1).GetChild (curHint).gameObject.SetActive (false);
 	}
 }
