@@ -12,7 +12,8 @@ public class Back : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyUp("escape")){
-			ChangeScene.instance.Return();
+			//ChangeScene.instance.Return();
+			ChangeScene.instance.GotoSelectedScene("Main Menu 3");
 		}
 	}
 }

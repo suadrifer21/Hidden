@@ -127,7 +127,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.2.00
+  bundleVersion: 1.2.03
   preloadedAssets: []
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -153,8 +153,8 @@ PlayerSettings:
     iOS: com.matata.games.playground.hiddenobject
     tvOS: com.matata.games.playground.hiddenobject
   buildNumber:
-    iOS: 1
-  AndroidBundleVersionCode: 18
+    iOS: 0
+  AndroidBundleVersionCode: 20
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -614,7 +614,7 @@ PlayerSettings:
     Collab: 0
     ErrorHub: 0
     Hub: 0
-    UNet: 0
+    UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 0b43c5c3-0ec5-401c-9526-7a79d2e2f366

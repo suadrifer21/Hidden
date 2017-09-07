@@ -96,8 +96,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Bali/Calon Arang/Temple.unity
     guid: c031c600ad94042c5abe2930fc65fb03
   - enabled: 1
-    path: Assets/Scenes/Bali/Calon Arang/Burned Village old.unity
-    guid: 0a83f79f905df4964a4c03ddf5465a57
+    path: Assets/Scenes/Bali/Calon Arang/Burned Village.unity
+    guid: 9d773fb17188e4e3ebaa3fbea6e7642d
   - enabled: 1
     path: Assets/Scenes/Bali/Calon Arang/Calon Arang Ending.unity
     guid: 3df0eff844c8c47c480382d1cecd2603
@@ -105,11 +105,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Bali/Calon Arang/Challenge/Death Forest Time.unity
     guid: 9f4958ad7ecf14e58b7bf76ea435346a
   - enabled: 1
-    path: Assets/Scenes/Bali/Calon Arang/Challenge/Temple Time.unity
-    guid: b108e27552fa545bba27d7d010db5a5a
-  - enabled: 1
     path: Assets/Scenes/Bali/Calon Arang/Challenge/Palace Time.unity
     guid: 7ad4cb70cff574a1090349c071f88b71
   - enabled: 1
-    path: Assets/Scenes/Bali/Calon Arang/Challenge/Burned Village Time old.unity
-    guid: d6b6ba49b51cc4a928781af9c5dd97f8
+    path: Assets/Scenes/Bali/Calon Arang/Challenge/Temple Time.unity
+    guid: b108e27552fa545bba27d7d010db5a5a
+  - enabled: 1
+    path: Assets/Scenes/Bali/Calon Arang/Challenge/Burned Village Time.unity
+    guid: a41992b38126244d9bed9b26bf40c5f6

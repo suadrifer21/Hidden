@@ -1,4 +1,4 @@
-iOS
+Android
 05524b8f659e7bfe5756d1335fec24ba Stores.dll:UnityEngine.Purchasing.MoolahStoreImpl
 05524b8f659e7bfe5756d1335fec24ba Stores.dll:UnityEngine.Purchasing.Extension.UnityUtil
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
@@ -17,7 +17,7 @@ c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.T
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CheckAchievementLock
 60eed870167e94563437af95bcc883f9 Assembly-CSharp.dll:.Rotator
 a2205716825ec469d1261a4e1cadddf2 Assembly-CSharp-firstpass.dll:UnityEngine.Purchasing.IAPButton
-27bb2881b73debb43befc38a8df3db23 Assembly-CSharp.dll:.EndSceneScript
+98f84a6f256b25ebecac3a6a6cb8839d Assembly-CSharp.dll:.EndSceneScript
 2ba135c2b4859208c6b6b39f3a6c14d3 Assembly-CSharp.dll:AClockworkBerry.ScreenLogger
 e917832d8d12a8e05d6fa5fdc1326bae Assembly-CSharp.dll:.ScrollingUVs_Layers
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShopCanvas
@@ -152,6 +152,7 @@ e81898b1e49df404ac083d4426025459 Assembly-CSharp.dll:.SceneryRotation
 7a0f48fb129e472af6552a847bfd13a8 Assembly-CSharp.dll:.PostCinematic
 9279386adeda38f74314f19cd8fe6a9c Assembly-CSharp.dll:.ChangeMode
 715da8b75ede9f42dce0cc709166f92c Assembly-CSharp.dll:.TimerPopup
+9a56ce96fabb644ccff741e8fc48b409 Assembly-CSharp.dll:.AdsShop
 afa1a0cf109e4b4bd439e9a87d580f14 Assembly-CSharp.dll:.Scrolling
 834dbe3c469d6a80440f09656505b774 Assembly-CSharp.dll:.TitleAlpha
 5f2d53e8263544c4bf7e374f50d13d88 Assembly-CSharp.dll:.PurchaseConfirmation

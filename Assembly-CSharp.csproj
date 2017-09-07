@@ -264,6 +264,7 @@
      <Compile Include="Assets\Script\AchievementReward.cs" />
      <Compile Include="Assets\Script\AchievementScroller.cs" />
      <Compile Include="Assets\Script\Ads.cs" />
+     <Compile Include="Assets\Script\AdsShop.cs" />
      <Compile Include="Assets\Script\Back.cs" />
      <Compile Include="Assets\Script\Bag.cs" />
      <Compile Include="Assets\Script\BezierMovement.cs" />

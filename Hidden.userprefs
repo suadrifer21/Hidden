@@ -1,12 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/EndSceneScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Story/Balingkang/6 Closing.json">
     <Files>
-      <File FileName="Assets/Script/HOG/HOG/HogScene.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/HintParticleManager.cs" Line="75" Column="1" />
-      <File FileName="Assets/Script/SocialPlatformManager.cs" Line="4" Column="39" />
-      <File FileName="Assets/Script/GameCenter.cs" Line="4" Column="46" />
-      <File FileName="Assets/Script/EndSceneScript.cs" Line="5" Column="7" />
+      <File FileName="Assets/Resources/Story/Balingkang/6 Closing.json" Line="1" Column="1" />
+      <File FileName="Assets/Script/ChangeScene.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/UnlockStory.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/AchievementReward.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/StoryClearMessage.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/AdsShop.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Achievement/Bali/Barong.json" Line="1" Column="1" />
+      <File FileName="Assets/Script/SocialPlatformManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/GameCenter.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

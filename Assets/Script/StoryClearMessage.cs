@@ -23,6 +23,9 @@ public class StoryClearMessage : MonoBehaviour {
 				}
 			}
 		}
+
+//		print (storyEndName);
+//		print(PlayerPrefs.GetInt(storyEndName, 0));
 	}
 	
 	// Update is called once per frame

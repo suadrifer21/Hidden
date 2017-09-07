@@ -23,11 +23,11 @@ public class AchievementReward : MonoBehaviour {
 		//Cek Manik
 		int m = PlayerPrefs.GetInt ("Manik Achievement Cleared", 0);
 		if (m == 0) {
-			for (int i = 0; i < 7; i++) {
+			for (int i = 0; i < 8; i++) {
 				if (!achiList [i].isOpen)
 					break;
 
-				if (i == 6) //tambah cek apa udah di claim
+				if (i == 7) 
 					manikLock.SetActive (false);
 
 			}
@@ -43,7 +43,7 @@ public class AchievementReward : MonoBehaviour {
 				if (!achiList [i].isOpen)
 					break;
 
-				if (i == 13) //tambah cek apa udah di claim
+				if (i == 13) 
 					balingkangLock.SetActive (false);
 
 			}
@@ -52,6 +52,20 @@ public class AchievementReward : MonoBehaviour {
 			balingkangLock.gameObject.SetActive (false);
 		}
 		//Cek Calon
+		m = PlayerPrefs.GetInt ("Balingkang Achievement Cleared", 0);
+		if (m == 0) {
+			for (int i = 14; i < 21; i++) {
+				if (!achiList [i].isOpen)
+					break;
+
+				if (i == 20)
+					calonLock.SetActive (false);
+
+			}
+		} else {
+			calonLock.transform.parent.GetChild (0).gameObject.SetActive (false);
+			calonLock.gameObject.SetActive (false);
+		}
 	}
 
 	public void ClaimReward(int n){

@@ -28,6 +28,8 @@ public class Ads : MonoBehaviour {
 	#endif
 		// true = test mode
 		Advertisement.Initialize (gameId, true);
+
+
 	}
 
 	public void ShowAd(){
@@ -38,6 +40,7 @@ public class Ads : MonoBehaviour {
 
 	public void ShowRewardedAd(){
 		bool b = IsReady ();
+		print (b);
 
 		if (b) {
 			if (Advertisement.IsReady ("rewardedVideo")) {
