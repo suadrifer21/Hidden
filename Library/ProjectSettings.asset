@@ -127,7 +127,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.2.03
+  bundleVersion: 1.2.04
   preloadedAssets: []
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -154,7 +154,7 @@ PlayerSettings:
     tvOS: com.matata.games.playground.hiddenobject
   buildNumber:
     iOS: 0
-  AndroidBundleVersionCode: 20
+  AndroidBundleVersionCode: 21
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
